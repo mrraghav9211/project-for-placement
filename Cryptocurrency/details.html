@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/details.css">
+    <title>Detail | CryptoView</title>
+</head>
+
+<body>
+    <nav>
+        <div onclick="location.href='./index.html'" class="crypto_nav">
+            <img src="./cryptocurrency.png" alt="">
+            <h1>Crypto<sapn style="color: rgb(223, 98, 9);">View</sapn>
+            </h1>
+        </div>
+        <a href="./search.html">Search</a>
+    </nav>
+    <br>
+        <div class="main_container flex_container">
+            <div class="left_container flex_container">
+                <img src="" id="coin_img" alt="">
+                <div class="description">
+                <h1 id="coin_name"></h1>
+                <p style="max-width: 450px; padding-right: 10px;" id="coin_description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam nulla dolorum porro maxime
+                    possimus mollitia nobis dolor reiciendis at aut vitae, voluptates soluta excepturi laboriosam illum
+                    rem consectetur explicabo.</p>
+                </div>
+            </div>
+            <div class="right_container">
+                <table>
+                <tbody>
+                    <tr>
+                        <td >USD : </td>
+                        <td id="usd"></td>
+                    </tr>
+                    <tr>
+                        <td>EUR : </td>
+                        <td id="eur"></td>
+                    </tr>
+                    <tr>
+                        <td>INR : </td>
+                        <td id="inr"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+        </div>
+        <br>
+      <div class="canvas">
+        <canvas id="myChart1" aria-label="chart" role="img"></canvas>
+    </div>
+    <br>
+    <footer>
+        <div class="footer_section">
+              <div class="icon">
+                <img src="./cryptocurrency.png" alt="">
+                 <h1 style="font-size: 20px;">Crypto<sapn style="color: rgb(223, 98, 9);">View</sapn>
+                 </h1>
+              </div>
+              
+              <div class="social_media_links">
+                 <span onclick="location.href='https://www.facebook.com/mrraghav9412'" style="color: rgb(57, 57, 245);"><i class="fa-brands fa-facebook"></i></span>
+                 <span onclick="location.href='https://www.linkedin.com/in/rajani-kant-raghav-858585207'" style="color: rgb(20, 20, 245);"><i class="fa-brands fa-linkedin"></i></span>
+                 <span style="color: blue;"><i class="fa-brands fa-twitter-square"></i></span>
+                 <span onclick="location.href='https://www.instagram.com/rk_raghav_9211/'" style="color: rgb(243, 60, 47);"><i class="fa-brands fa-instagram-square"></i></span>
+              </div>
+              <div class="contect">
+               <form action="">
+                   <h3>Contect Us</h3>
+                   <input type="text" placeholder="Name "/><br>
+                   <input type="email" placeholder="Email"/><br>
+                   <input type="tel" placeholder="Mobile "/><br>
+                   <button>Submit</button>
+               </form>
+           </div>
+         </div>
+         <h3>&copy; Copyright 2022 R K Raghav</h3>
+       </footer>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+        <script src="./js/detail.js"></script>
+</body>
+
+</html>

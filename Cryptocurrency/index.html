@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CryptoView</title>
+</head>
+
+<body>
+
+    <!-- Navbar Section --> 
+    <nav>
+        <div class="crypto_nav">
+            <img src="./cryptocurrency.png" alt="">
+            <h1>Crypto<sapn style="color: rgb(223, 98, 9);">View</sapn>
+            </h1>
+        </div>
+        <a href="./search.html">Search</a>
+    </nav>
+    <!-- main section -->
+    <section class="main">
+        <div class="some_text">
+            <h1>Take a step into<br>
+                the <span style="color: rgb(220, 161, 14);">Crypto world</span></h1>
+            <p>A cryptocurrency is an encrypted data string that denotes a unit of currency. It is monitored and organized by a peer-to-peer network called a blockchain, which also serves as a secure ledger of transactions, e.g., buying, selling, and transferring.
+            </p>
+            <br>
+            <button onclick="location.href='https://www.coinbase.com/learn/crypto-basics/what-is-cryptocurrency'">Read More</button>
+        </div>
+        <div class="image_container">
+            <img src="./business.png" alt="">
+        </div>
+    </section>
+    <!-- trending  coin -->
+    <div class="trnd_coin_conatiner">
+        <h2>Top 10 🔥Trending coins</h2>
+        <section class="trending_coin">
+
+            <div onclick="location.href='./details.html?coin=bitcoin'" class="card">
+                <img src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1547033579" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Bitcoin (BTC)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="bitcoin"></span></h5>
+                </div>
+            </div>
+            <div onclick="location.href='./details.html?coin=ethereum'" class="card">
+                <img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Ethereum(ETH)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="ethereum"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/4284/large/Helium_HNT.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Helium(HNT)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="hnt"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/22785/large/download.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">AltSwitch(ALTS)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="alts"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/5/large/dogecoin.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Dogecoin(DOGE)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="doge"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/18616/large/1024-1024-02.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">PolkaEx(PKEX)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="pkex"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/975/large/cardano.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Cardano(ADA)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="ada"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/100/large/Stellar_symbol_black_RGB.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Stellar(XLM))</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="xlm"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/10365/large/near_icon.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">NEAR Protocol</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="near"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/2/large/litecoin.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Litecoin(LTC)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="ltc"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/4128/large/solana.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Solana(SOL)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="sol"></span></h5>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <footer>
+     <div class="footer_section">
+           <div class="icon">
+            <img src="./cryptocurrency.png" alt="">
+              <h1 style="font-size: 20px;">Crypto<sapn style="color: rgb(223, 98, 9);">View</sapn>
+              </h1>
+           </div>
+           
+           <div class="social_media_links">
+              <span onclick="location.href='https://www.facebook.com/mrraghav9412'" style="color: rgb(57, 57, 245);"><i class="fa-brands fa-facebook"></i></span>
+              <span onclick="location.href='https://www.linkedin.com/in/rajani-kant-raghav-858585207'" style="color: rgb(20, 20, 245);"><i class="fa-brands fa-linkedin"></i></span>
+              <span style="color: blue;"><i class="fa-brands fa-twitter-square"></i></span>
+              <span onclick="location.href='https://www.instagram.com/rk_raghav_9211/'" style="color: rgb(243, 60, 47);"><i class="fa-brands fa-instagram-square"></i></span>
+           </div>
+           <div class="contect">
+            <form action="">
+                <h3>Contect Us</h3>
+                <input type="text" placeholder="Name "/><br>
+                <input type="email" placeholder="Email"/><br>
+                <input type="tel" placeholder="Mobile "/><br>
+                <button>Submit</button>
+            </form>
+        </div>
+      </div>
+      <h3>&copy; Copyright 2022 R K Raghav</h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
