@@ -17,6 +17,7 @@ nav img {
 }
 
 nav>.crypto_nav {
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 5px;
